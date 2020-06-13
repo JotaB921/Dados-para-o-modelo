@@ -13,15 +13,15 @@ library(ggpubr)
 library(bayesplot)
 library(cowplot)
 
-source("~/Videos/covid19model-master/utils/geom-stepribbon.r")
+source("utils/geom-stepribbon.r")
 
 make_forecast_plot <- function(filename){
   
-  load(paste0('~/Videos/covid19model-master/Brazil/results/',filename,'-stanfit.Rdata'))
+  load(paste0('Brazil/results/',filename,'-stanfit.Rdata'))
   table_paper = NULL
   all_data <- data.frame()
   all_data_forecast <- data.frame()
-  leitos <- read.csv(paste0("~/Videos/covid19model-master/Brazil/data/leitos.csv"))
+  leitos <- read.csv(paste0("Brazil/data/leitos.csv"))
   print(countries)
   for(i in 1:length(countries)){
     N <- length(dates[[i]])
@@ -112,8 +112,8 @@ make_forecast_plot <- function(filename){
                      country = country, 
                      lts = lts)
   }
-  write.csv2(all_data, paste0("~/Videos/covid19model-master/results/", "base-forecast-plot.csv"))
-  write.csv2(all_data_forecast, paste0("~/Videos/covid19model-master/results/", "forecast-plot.csv"))
+  write.csv2(all_data, paste0("results/", "base-forecast-plot.csv"))
+  write.csv2(all_data_forecast, paste0("results/", "forecast-plot.csv"))
 }
 
 make_single_plot <- function(data_country, data_country_forecast, filename, country, lts){
@@ -199,15 +199,15 @@ make_single_plot <- function(data_country, data_country_forecast, filename, coun
 
   print(p)
   
-  ggsave(file= paste0("~/Videos/covid19model-master/figures/", country, "_forecast_", ".png"), 
+  ggsave(file= paste0("figures/", country, "_forecast_", ".png"), 
          p, width = 10, height = 5)
   
   # Produce plots for Website
-  dir.create("~/Videos/covid19model-master/web/figures/desktop/", showWarnings = FALSE, recursive = TRUE)
-  save_plot(filename = paste0("~/Videos/covid19model-master/web/figures/desktop/", country, "_forecast", ".png"), 
+  dir.create("web/figures/desktop/", showWarnings = FALSE, recursive = TRUE)
+  save_plot(filename = paste0("web/figures/desktop/", country, "_forecast", ".png"), 
             p, base_height = 4, base_asp = 1.618 * 2 * 8/12)
-  dir.create("~/Videos/covid19model-master/web/figures/mobile/", showWarnings = FALSE, recursive = TRUE)
-  save_plot(filename = paste0("~/Videos/covid19model-master/web/figures/mobile/", country, "_forecast", ".png"), 
+  dir.create("web/figures/mobile/", showWarnings = FALSE, recursive = TRUE)
+  save_plot(filename = paste0("web/figures/mobile/", country, "_forecast", ".png"), 
             p, base_height = 4, base_asp = 1.1)
 }
 
