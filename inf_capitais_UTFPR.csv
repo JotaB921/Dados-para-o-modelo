@@ -1,0 +1,41 @@
+regiao,UF,Municipio,UF_COD,ibgeID,Pop_estimada
+Norte,PA,Tucurui,15,1508100,113659
+Norte,AC,Rio Branco,12,1200401,407319
+Nordeste,AL,Maceio,27,2704302,1018948
+Norte,AP,Macapa,16,1600303,503327
+Norte,AM,Manaus,13,1302603,2182763
+Nordeste,BA,Salvador,29,2927408,2872347
+Nordeste,CE,Fortaleza,23,2304400,2669342
+Centro-Oeste,DF,Brasilia,53,5300108,3015268
+Sudeste,ES,Vitoria,32,3205309,362097
+Centro-Oeste,GO,Goiania,52,5208707,1516113
+Nordeste,MA,Sao Luis,21,2111300,1101884
+Centro-Oeste,MT,Cuiaba,51,5103403,612547
+Centro-Oeste,MS,Campo Grande,50,5002704,895982
+Sudeste,MG,Belo Horizonte,31,3106200,2512070
+Norte,PA,Belem,15,1501402,1492745
+Nordeste,PB,Joao Pessoa,25,2507507,809015
+Sul,PR,Curitiba,41,4106902,1933105
+Nordeste,PE,Recife,26,2611606,1645727
+Nordeste,PI,Teresina,22,2211001,864845
+Nordeste,PI,Teresina,22,2211001,864845
+Sudeste,RJ,Rio de Janeiro,33,3304557,6718903
+Nordeste,RN,Natal,24,2408102,884122
+Sul,RS,Porto Alegre,43,4314902,1483771
+Norte,RO,Porto Velho,11,1100205,529544
+Norte,RR,Boa Vista,14,1400100,399213
+Sul,SC,Florianopolis,42,4205407,500973
+Sudeste,SP,Sao Paulo,35,3550308,12252023
+Nordeste,SE,Aracaju,28,2800308,657013
+Sul,PR,Palmas,41,4117602,50986
+Sul,PR,Apucarana,41,4101408,134996
+Sul,PR,Campo Mourao,41,4104303,94859
+Sul,PR,Cornelio Procopio,41,4106407,47845
+Sul,PR,Dois Vizinhos,41,4107207,40641
+Sul,PR,Francisco Beltrao,41,4108403,91093
+Sul,PR,Guarapuava,41,4109401,181504
+Sul,PR,Medianeira,41,4115804,46198
+Sul,PR,Pato Branco,41,4118501,82881
+Sul,PR,Ponta Grossa,41,4119905,351736
+Sul,PR,Santa Helena,41,4123501,26490
+Sul,PR,Toledo,41,4127700,140635
